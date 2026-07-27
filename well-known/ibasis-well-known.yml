@@ -1,0 +1,18 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://ibasis.com/.well-known/*
+host: https://ibasis.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: No /.well-known/ discovery documents are published on the iBasis marketing
+  host. iBasis operates a customer/partner portal (eCare) behind SSO at
+  sso.ibasis.net; no public developer or API discovery surface was found.

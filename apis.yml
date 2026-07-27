@@ -1,8 +1,17 @@
 aid: ibasis
 name: iBasis
-description: 'iBasis is a company surfaced as a portfolio company of crv and added to the API Evangelist
-  network as a stub for enrichment. Sector: telecom-infrastructure. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'iBasis is a global communications solutions provider serving mobile
+  operators, MVNOs, over-the-top players, and IoT device companies worldwide. Its
+  portfolio spans international and managed voice, 5G data roaming and roaming
+  hub/breakout, A2P and RCS messaging monetization, and IoT connectivity built on
+  eSIM technology, the Simfony connectivity-management platform, MVNO-as-a-Service,
+  and fixed wireless access. iBasis also offers signaling and fraud security
+  (FraudLock iQ360, Security iQ360, Signaling Vulnerability Scanner) and business
+  intelligence for carriers. Customer and partner operations run through the eCare
+  portal behind single sign-on; iBasis does not currently publish a public developer
+  program, OpenAPI specifications, or SDKs. This profile was surfaced as a portfolio
+  company of CRV and enriched from the public iBasis web presence and live domain
+  probes.'
 url: https://raw.githubusercontent.com/api-evangelist/ibasis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +19,31 @@ x-backed-by:
 - crv
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://ibasis.com/wp-content/uploads/2022/03/IBS_endpoint_InternationalVoice_1400x1400.png
 tags:
 - Company
 - Telecom Infrastructure
+- Voice
+- Messaging
+- IoT
+- eSIM
+- Roaming
+- Connectivity
+- MVNO
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +53,20 @@ maintainers:
 common:
 - type: Website
   url: https://ibasis.com/
+- type: Blog
+  url: https://ibasis.com/blog/
+- type: Support
+  url: https://ibasis.com/contact/
+- type: Login
+  url: https://sso.ibasis.net/cas/login?service=https%3A%2F%2Fecare.ibasis.net%2Flogin%2Fcas
+- type: PrivacyPolicy
+  url: https://ibasis.com/privacy-policy/
+- type: TermsOfService
+  url: https://ibasis.com/terms-of-use/
+- type: DomainSecurity
+  url: security/ibasis-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
